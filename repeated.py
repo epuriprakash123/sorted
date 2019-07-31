@@ -10,4 +10,7 @@ n=int(input())
 l=list(map(int,input().split()))
 k=repeat(l)
 k.sort()
-print(*k)
+if len(k)==0:
+	print("unique")
+else:
+        print(*k)
